@@ -22,7 +22,7 @@ RUN cd $(mktemp -d) && \
     ./configure \
         --with-openssl=../openssl-1.1.1b \
         --with-pcre=../pcre-8.43 \
-        --with-zlib=../zlib-1.2.12 \
+        --with-zlib=../zlib-1.2.13 \
         --with-http_v2_module \
         --with-http_ssl_module \
         --with-pcre-jit \
