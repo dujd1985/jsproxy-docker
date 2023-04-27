@@ -13,7 +13,7 @@ RUN cd $(mktemp -d) && \
     tar zxf openssl-* && ls -l && \
     curl -k -O https://ftp.exim.org/pub/pcre/pcre-8.43.tar.gz && \
     tar zxf pcre-* && ls -l && \
-    curl -k -O https://zlib.nethttps://zlib.net/zlib-1.2.13.tar.gz && \
+    curl -k -O https://zlib.net/zlib-1.2.13.tar.gz && \
     tar zxf zlib-* && ls -l && \
     curl -k -O https://openresty.org/download/openresty-1.15.8.1.tar.gz && \
     tar zxf openresty-* && ls -l &&\
