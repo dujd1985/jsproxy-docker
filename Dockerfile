@@ -10,13 +10,13 @@ WORKDIR /home/jsproxy
 
 RUN cd $(mktemp -d) && \
     curl -k -O https://www.openssl.org/source/openssl-1.1.1b.tar.gz && \
-    tar zxf openssl-* && \
+    tar zxf openssl-* && ls -l && \
     curl -k -O https://ftp.exim.org/pub/pcre/pcre-8.43.tar.gz && \
-    tar zxf pcre-* && \
+    tar zxf pcre-* && ls -l && \
     curl -k -O https://zlib.net/zlib-1.2.12.tar.gz && \
-    tar zxf zlib-* && \
+    tar zxf zlib-* && ls -l && \
     curl -k -O https://openresty.org/download/openresty-1.15.8.1.tar.gz && \
-    tar zxf openresty-* && \
+    tar zxf openresty-* && ls -l &&\
     cd openresty-* && \
     export PATH=$PATH:/sbin && \
     ./configure \
