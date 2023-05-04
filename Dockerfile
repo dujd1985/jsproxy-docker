@@ -47,7 +47,8 @@ COPY --from=builder /home/jsproxy /home/jsproxy
 
 WORKDIR /home/jsproxy
 
-EXPOSE 8443
+# EXPOSE 8443
 EXPOSE 8080
 
-CMD ./server/run.sh && while true; do sleep 1; done
+# CMD ./server/run.sh && while true; do sleep 1; done
+CMD ./server/run.sh && tail -f /home/jsproxy/openresty/nginx/sbin/nginx/logs/proxy.log
