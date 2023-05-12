@@ -30,10 +30,10 @@ RUN cd $(mktemp -d) && \
     make && \
     make install
 
-RUN git clone --depth=1 https://github.com/EtherDream/jsproxy.git server && \
+RUN git clone --depth=1 https://github.com/dujd1985/jsproxy.git server && \
     cd server && \
     rm -rf www && \
-    git clone -b gh-pages --depth=1 https://github.com/EtherDream/jsproxy.git www
+    git clone -b gh-pages --depth=1 https://github.com/dujd1985/jsproxy.git www
 
 
 FROM ubuntu as prod
